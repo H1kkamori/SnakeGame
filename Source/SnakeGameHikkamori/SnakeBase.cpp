@@ -48,7 +48,7 @@ void ASnakeBase::AddSnakeElement(int ElementsNum)
 
 void ASnakeBase::Move()
 {
-	FVector MovementVector;
+	FVector MovementVector(FVector::ZeroVector);
 	MovementSpeed = ElementSize;
 	
 	switch (LastMovementDirection)
